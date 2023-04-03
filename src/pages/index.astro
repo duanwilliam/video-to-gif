@@ -1,0 +1,21 @@
+---
+import { FileUpload } from '../components/file-upload'
+
+import "../styles/reset.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<script src="/coi-serviceworker.min.js" is:inline />
+	</head>
+	<body>
+		<main class="min-h-full p-8 flex flex-col items-center gap-8">
+			<h1 class="text-5xl font-bold">video to gif</h1>
+			<FileUpload client:idle />
+		</main>
+	</body>
+</html>
